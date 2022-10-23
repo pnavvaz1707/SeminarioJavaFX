@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seminariojavafx.EjemploController">
+    <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" textAlignment="CENTER" />
+        <TextField fx:id="txtFieldUser" layoutX="226.0" layoutY="175.0" />
+        <Text layoutX="270.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
+        <TextField fx:id="txtFieldPassword" layoutX="226.0" layoutY="240.0" />
+        <Button layoutX="274.0" layoutY="294.0" mnemonicParsing="false" text="Iniciar sesión" />
+    </children>
+</AnchorPane>
