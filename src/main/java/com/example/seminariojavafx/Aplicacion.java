@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class Aplicacion extends Application {
 
     private static Scene scene;
     private static Stage stage;
@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         this.stage = stage;
-        scene = new Scene(loadFXML("ejemplo").load());
+        scene = new Scene(loadFXML("ventana-principal").load());
         stage.setScene(scene);
         stage.show();
     }
@@ -30,7 +30,7 @@ public class HelloApplication extends Application {
     }
 
     private static FXMLLoader loadFXML(String fxml) throws IOException {
-        return new FXMLLoader(HelloApplication.class.getResource(fxml + ".fxml"));
+        return new FXMLLoader(Aplicacion.class.getResource(fxml + ".fxml"));
     }
 
     public static void main(String[] args) {
@@ -38,7 +38,7 @@ public class HelloApplication extends Application {
     }
 //    @Override
 //    public void start(Stage stage) throws IOException {
-//        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ejemplo.fxml"));
+//        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("ventana-principal.fxml"));
 //        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
 //        stage.setTitle("Hello!");
 //        stage.setScene(scene);
